@@ -69,3 +69,9 @@ equalSign.addEventListener("click", () => {
   calculate();
   updateScreen(currentNumber);
 });
+
+const clearBtn = document.querySelector(".all-clear");
+
+clearBtn.addEventListener("click", () => {
+  console.log("AC button is pressed");
+});
