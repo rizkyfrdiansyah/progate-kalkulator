@@ -39,24 +39,30 @@ operators.forEach((operator) => {
 });
 
 const equalSign = document.querySelector(".equal-sign");
+
+equalSign.addEventListener("click", () => {
+  calculate();
+  updateScreen(currentNumber);
+});
+
 const calculate = () => {
   let result = "";
-  const prev = parseInt(prevNumber);
-  const current = parseInt(currentNumber);
+  const prev = parseFloat(prevNumber);
+  const current = parseFloat(currentNumber);
   if (isNaN(prev) || isNaN(current)) return;
 
   switch (calculationOperator) {
     case "+":
-      result = parseInt(prevNumber) + parseInt(currentNumber);
+      result = prev + current;
       break;
     case "-":
-      result = parseInt(prevNumber) - parseInt(currentNumber);
+      result = prev - current;
       break;
     case "*":
-      result = parseInt(prevNumber) * parseInt(currentNumber);
+      result = prev * current;
       break;
     case "/":
-      result = parseInt(prevNumber) / parseInt(currentNumber);
+      result = prev / current;
       break;
     default:
       return;
@@ -65,13 +71,15 @@ const calculate = () => {
   calculationOperator = "";
 };
 
-equalSign.addEventListener("click", () => {
-  calculate();
-  updateScreen(currentNumber);
-});
-
 const clearBtn = document.querySelector(".all-clear");
 
+const clearAll = () => {
+  prevNumber = "";
+  calculationOperator = "";
+  currentNumber = "0";
+  updateScreen(currentNumber);
+};
+
 clearBtn.addEventListener("click", () => {
-  console.log("AC button is pressed");
+  clearAll();
 });
