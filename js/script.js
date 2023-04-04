@@ -53,7 +53,7 @@ const calculate = () => {
 
   switch (calculationOperator) {
     case "+":
-      result = prev + current;
+      result = parseFloat(prevNumber) + parseFloat(currentNumber);
       break;
     case "-":
       result = prev - current;
@@ -85,7 +85,14 @@ clearBtn.addEventListener("click", () => {
 });
 
 const decimal = document.querySelector(".decimal");
+inputDecimal = (dot) => {
+  if (currentNumber.includes(".")) {
+    return;
+  }
+  currentNumber += dot;
+};
 
 decimal.addEventListener("click", (event) => {
-  console.log(event.target.value);
+  inputDecimal(event.target.value);
+  updateScreen(currentNumber);
 });
