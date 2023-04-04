@@ -2,14 +2,14 @@
 
 Membuat aplikasi kalkulator sederhana berbasis web dengan 3 file `html`, `css`, dan `javascript`. Adapun langkah untuk membuat aplikasi kalkulator sederhana ini, yaitu :
 
-- 1. Tambahkan html code ke index.html
-- 2. Tambahkan code CSS ke stylesheet.css
-- 3. Membuat aplikasi dapat menerima input dari tombol-tombol dan menampilkannya di layar display aplikasi kalkulator.
-- 4. Menyimpan angka-angka dan operator untuk melakukan kalkulasi.
-- 5. Mengaktifkan fungsi kalkulasi ke aplikasi calculatornya.
-- 6. Membuat tombol AC berjalan dengan lancar
-- 7. Membuat aplikasi dapat mengkalkulasi angka desimal.
-- 8. Menyelesaikan suatu masalah
+- Tambahkan html code ke index.html
+- Tambahkan code CSS ke stylesheet.css
+- Membuat aplikasi dapat menerima input dari tombol-tombol dan menampilkannya di layar display aplikasi kalkulator.
+- Menyimpan angka-angka dan operator untuk melakukan kalkulasi.
+- Mengaktifkan fungsi kalkulasi ke aplikasi calculatornya.
+- Membuat tombol AC berjalan dengan lancar
+- Membuat aplikasi dapat mengkalkulasi angka desimal.
+- Menyelesaikan suatu masalah
 
 ## TOOLS
 
@@ -19,10 +19,10 @@ Membuat aplikasi kalkulator sederhana berbasis web dengan 3 file `html`, `css`, 
 
 ## UI KALKULATOR
 
-WEB
+`WEB`
 
 ![image](/screenshot/UI%20kalkulator.png)
 
-MOBILE
+`MOBILE`
 
 ![image](screenshot/mobile.png)
