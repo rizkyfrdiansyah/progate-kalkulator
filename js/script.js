@@ -27,9 +27,13 @@ let prevNumber = "";
 let calculationOperator = "";
 
 const inputOperator = (operator) => {
-  prevNumber = currentNumber;
+  if (calculationOperator === "") {
+    prevNumber = currentNumber;
+  } else {
+    calculate();
+  }
   calculationOperator = operator;
-  currentNumber = "";
+  currentNumber = "0";
 };
 
 operators.forEach((operator) => {
